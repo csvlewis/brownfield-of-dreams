@@ -2,6 +2,13 @@ import { Controller } from 'stimulus'
 
 export default class extends Controller {
 
+  createBookmarkForUser(event) {
+    event.preventDefault();
+    const desc = document.querySelector(`#description-id-for`);
+    desc.style.display = 'block';
+    desc.color = 'red';
+  }
+
   showDescription(event) {
     event.preventDefault();
     fetch(`/api/v1/videos/${event.target.id}`)
