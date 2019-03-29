@@ -1,28 +1,18 @@
 # Brownfield Of Dreams
 
-This is the base repo for a brownfield project used at Turing for Backend Mod 3.
-
-Project Spec and Evaluation Rubric: https://github.com/turingschool-examples/brownfield-of-dreams
-
-### Project Board
-
-Students will continue to build on the existing code base using the cards within the following Github Project: https://github.com/turingschool-examples/brownfield-of-dreams/projects/1
-
-**Learning Goals and Labels**
-
-The cards are labeled in a way that correspond to learning goals or to specific areas you might personally want to focus on.
-
-Cards should be completed from top to bottom in the To Do column. Cards labeled `good first issue` are good as filler work and will allow you to practice common Rails skills.
-
-### About the Project
-
-This is a Ruby on Rails application used to organize YouTube content used for online learning. Each tutorial is a playlist of video segments. Within the application an admin is able to create tags for each tutorial in the database. A visitor or registered user can then filter tutorials based on these tags.
+Brownfield of Dreams is a brownfield project using a codebase for a Rails application that organizes YouTube content for online learning. Each tutorial is a playlist of video segments. Within the application an admin is able to create tags for each tutorial in the database. A visitor or registered user can then filter tutorials based on these tags.
 
 A visitor is able to see all of the content on the application but in order to bookmark a segment they will need to register. Once registered a user can bookmark any of the segments in a tutorial page.
 
-## Local Setup
+Using this existing code, we implemented several additional features including:
+* User GitHub OAuth connectivity
+* Email activation and invitations
+* User Friendships
+* Importing tutorials from YouTube playlist ids
 
-First you'll need to setup an API key with YouTube and have it defined within `ENV['YOUTUBE_API_KEY']`. There will be one failing spec if you don't have this set up.
+A full list of added features can be found on the application's GitHub Project page: https://github.com/csvlewis/brownfield-of-dreams/projects/2
+
+## Local Setup
 
 Clone down the repo
 ```
@@ -53,6 +43,15 @@ Run the test suite:
 $ bundle exec rspec
 ```
 
+There are several environment variables that you will need to define in your 'application.yml' file:
+* github_key
+* TEST_AUTHORIZATION_TOKEN
+* YOUTUBE_API_KEY
+* GITHUB_CLIENT_ID
+* GITHUB_CLIENT_SECRET
+* SENDGRID_USERNAME
+* SENDGRID_PASSWORD
+
 ## Technologies
 * [Stimulus](https://github.com/stimulusjs/stimulus)
 * [will_paginate](https://github.com/mislav/will_paginate)
@@ -61,6 +60,9 @@ $ bundle exec rspec
 * [vcr](https://github.com/vcr/vcr)
 * [selenium-webdriver](https://www.seleniumhq.org/docs/03_webdriver.jsp)
 * [chromedriver-helper](http://chromedriver.chromium.org/)
+
+## Created By
+
 
 ### Versions
 * Ruby 2.4.1
