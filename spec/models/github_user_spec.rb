@@ -5,9 +5,9 @@ require 'rails_helper'
 describe GithubUser do
   it 'exists' do
     user = GithubUser.new(login: 'repo1', html_url: 'www.repo.com')
-    
+
     expect(user).to be_a(GithubUser)
-    ##spies
+    # #spies
     allow(user).to receive(:name).and_return('spied user')
     allow(user).to receive(:url).and_return('spied.com')
 
