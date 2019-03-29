@@ -7,7 +7,7 @@ describe Repo do
     repo = Repo.new(name: 'repo1', html_url: 'www.repo.com')
     expect(repo).to be_a(Repo)
 
-    ##spies
+    # #spies
     allow(repo).to receive(:name).and_return('not repo1')
     allow(repo).to receive(:url).and_return('www.notrepo.com')
 

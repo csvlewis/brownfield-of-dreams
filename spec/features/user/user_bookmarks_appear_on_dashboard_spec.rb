@@ -19,7 +19,7 @@ describe 'A registered user without a github token' do
         click_link(videos[0].title)
       end
 
-      expect(page.has_current_path?(tutorial_path(videos[0].tutorial))).to be(true)
+      expect(current_path).to eq(tutorial_path(videos[0].tutorial))
     end
   end
 end

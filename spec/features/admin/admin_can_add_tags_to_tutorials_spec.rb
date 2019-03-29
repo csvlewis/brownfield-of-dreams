@@ -17,7 +17,7 @@ describe 'An admin user can add tags to tutorials' do
       click_on 'Edit'
     end
 
-    expect(page.has_current_path?(edit_admin_tutorial_path(tutorial))).to be(true)
+    expect(current_path).to eq(edit_admin_tutorial_path(tutorial))
 
     fill_in 'tutorial[tag_list]', with: 'Ruby'
     click_on 'Update Tags'
