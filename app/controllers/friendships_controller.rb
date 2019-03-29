@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class FriendshipsController < ApplicationController
   def create
     if User.find_by(uid: params[:uid])

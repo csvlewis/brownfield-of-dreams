@@ -4,7 +4,6 @@ require 'rails_helper'
 
 describe 'A registered user' do
   context 'visiting /dashboard' do
-
     it 'can send an email invite to a github user who has an email', :vcr do
       mock_user_dashboard_github
       # rubocop:disable Metrics/LineLength

@@ -5,11 +5,11 @@ require 'rails_helper'
 describe YouTube::Video, type: :model do
   before do
     @hash = { items: [snippet: { thumbnails: { high: { url: 'test' } } }] }
-    @hash1 = {snippet: {thumbnails: {high: {url: 'this is url'}},
-                        title: 'this is title',
-                        description: 'this is description',
-                        position: 'this is position'},
-              contentDetails: {videoId: 2}}
+    @hash1 = { snippet: { thumbnails: { high: { url: 'this is url' } },
+                          title: 'this is title',
+                          description: 'this is description',
+                          position: 'this is position' },
+               contentDetails: { videoId: 2 } }
   end
 
   it 'exists' do
@@ -32,7 +32,7 @@ describe YouTube::Video, type: :model do
   describe 'instance methods' do
     describe '#by_id' do
       it 'returns a YouTube video by YouTube video id', :vcr do
-        expect(YouTube::Video.by_id('dQw4w9WgXcQ').is_a?(YouTube::Video)).to be(true)
+        expect(YouTube::Video.by_id('dQw4w9WgXcQ')).to be_a(YouTube::Video)
       end
     end
   end
