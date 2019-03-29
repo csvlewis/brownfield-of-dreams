@@ -62,7 +62,8 @@ There are several environment variables that you will need to define in your 'ap
 * [chromedriver-helper](http://chromedriver.chromium.org/)
 
 ## Created By
-
+* [Chris Lewis](https://github.com/csvlewis)
+* [Manoj Panta](https://github.com/manojpanta)
 
 ### Versions
 * Ruby 2.4.1
