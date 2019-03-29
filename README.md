@@ -10,7 +10,7 @@ Using this existing code, we implemented several additional features including:
 * User Friendships
 * Importing tutorials from YouTube playlist ids
 
-A full list of added features can be found on the application's GitHub Project page: https://github.com/csvlewis/brownfield-of-dreams/projects/2
+A full list of added features can be found on the application's [GitHub Project page](https://github.com/csvlewis/brownfield-of-dreams/projects/2)
 
 ## Local Setup
 
@@ -62,7 +62,8 @@ There are several environment variables that you will need to define in your 'ap
 * [chromedriver-helper](http://chromedriver.chromium.org/)
 
 ## Created By
-
+* [Chris Lewis](https://github.com/csvlewis)
+* [Manoj Panta](https://github.com/manojpanta)
 
 ### Versions
 * Ruby 2.4.1
