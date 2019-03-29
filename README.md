@@ -10,7 +10,7 @@ Using this existing code, we implemented several additional features including:
 * User Friendships
 * Importing tutorials from YouTube playlist ids
 
-A full list of added features can be found on the application's GitHub Project page: https://github.com/csvlewis/brownfield-of-dreams/projects/2
+A full list of added features can be found on the application's [GitHub Project page](https://github.com/csvlewis/brownfield-of-dreams/projects/2)
 
 ## Local Setup
 
